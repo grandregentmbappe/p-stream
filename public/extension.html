@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Install Extension – nowfar.lol</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@400;700&family=DM+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0f0c1a;
+      --surface: #1a1526;
+      --border: #2a2440;
+      --accent: #7c3aed;
+      --accent-light: #a78bfa;
+      --text: #e2d9f3;
+      --muted: #7c6fa0;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      min-height: 100vh;
+      padding: 0;
+    }
+
+    header {
+      padding: 1.5rem 2rem;
+      border-bottom: 1px solid var(--border);
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+
+    .logo {
+      font-family: 'Rowdies', cursive;
+      font-size: 1.4rem;
+      color: white;
+      text-decoration: none;
+    }
+
+    .logo span {
+      color: var(--accent-light);
+    }
+
+    main {
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 3rem 2rem 5rem;
+    }
+
+    .hero {
+      text-align: center;
+      margin-bottom: 3.5rem;
+    }
+
+    .badge {
+      display: inline-block;
+      background: rgba(124, 58, 237, 0.15);
+      border: 1px solid rgba(124, 58, 237, 0.4);
+      color: var(--accent-light);
+      font-size: 0.75rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      padding: 0.3rem 0.8rem;
+      border-radius: 999px;
+      margin-bottom: 1.25rem;
+    }
+
+    h1 {
+      font-family: 'Rowdies', cursive;
+      font-size: clamp(2rem, 5vw, 3rem);
+      color: white;
+      line-height: 1.15;
+      margin-bottom: 1rem;
+    }
+
+    .subtitle {
+      color: var(--muted);
+      font-size: 1.05rem;
+      line-height: 1.6;
+      max-width: 500px;
+      margin: 0 auto 2rem;
+    }
+
+    .download-btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      background: var(--accent);
+      color: white;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 1rem;
+      font-weight: 600;
+      padding: 0.85rem 2rem;
+      border-radius: 10px;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+    }
+
+    .download-btn:hover {
+      background: #6d28d9;
+      transform: translateY(-1px);
+    }
+
+    .download-btn svg {
+      width: 18px;
+      height: 18px;
+    }
+
+    .steps-title {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 1.25rem;
+    }
+
+    .steps {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    .step {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.25rem 1.5rem;
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+
+    .step-num {
+      width: 32px;
+      height: 32px;
+      min-width: 32px;
+      border-radius: 50%;
+      background: rgba(124, 58, 237, 0.2);
+      border: 1px solid rgba(124, 58, 237, 0.4);
+      color: var(--accent-light);
+      font-weight: 700;
+      font-size: 0.85rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .step-content h3 {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: white;
+      margin-bottom: 0.3rem;
+    }
+
+    .step-content p {
+      font-size: 0.88rem;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .step-content a {
+      color: var(--accent-light);
+      text-decoration: none;
+    }
+
+    .step-content a:hover {
+      text-decoration: underline;
+    }
+
+    code {
+      background: rgba(255,255,255,0.06);
+      border: 1px solid var(--border);
+      padding: 0.15rem 0.45rem;
+      border-radius: 5px;
+      font-size: 0.82rem;
+      font-family: monospace;
+      color: var(--accent-light);
+    }
+
+    .note {
+      margin-top: 2.5rem;
+      background: rgba(124, 58, 237, 0.07);
+      border: 1px solid rgba(124, 58, 237, 0.25);
+      border-radius: 10px;
+      padding: 1rem 1.25rem;
+      font-size: 0.85rem;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .note strong {
+      color: var(--accent-light);
+    }
+  </style>
+</head> 
+<body>
+
+<header>
+  <a href="/" class="logo">nowfar<span>.lol</span></a>
+</header>
+
+<main>
+  <div class="hero">
+    <div class="badge">Browser Extension</div>
+    <h1>Unlock More Sources</h1>
+    <p class="subtitle">Install the nowfar.lol extension to access faster servers and more streaming sources.</p>
+    <a href="/src/extension/extension.zip" download class="download-btn">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4" />
+      </svg>
+      Download Extension ZIP
+    </a>
+  </div>
+
+  <p class="steps-title">Installation Steps — Chrome / Edge / Brave</p>
+
+  <div class="steps">
+    <div class="step">
+      <div class="step-num">1</div>
+      <div class="step-content">
+        <h3>Download the ZIP</h3>
+        <p>Click the button above to download the extension ZIP file, then extract it somewhere on your computer.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">2</div>
+      <div class="step-content">
+        <h3>Open Extensions Page</h3>
+        <p>In Chrome go to <code>chrome://extensions</code>, in Edge go to <code>edge://extensions</code>, in Brave go to <code>brave://extensions</code>.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">3</div>
+      <div class="step-content">
+        <h3>Enable Developer Mode</h3>
+        <p>Toggle on <strong>Developer mode</strong> in the top right corner of the extensions page.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">4</div>
+      <div class="step-content">
+        <h3>Load Unpacked</h3>
+        <p>Click <strong>Load unpacked</strong> and select the extracted folder from Step 1.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-num">5</div>
+      <div class="step-content">
+        <h3>Done!</h3>
+        <p>The extension is now installed. Head back to <a href="/">nowfar.lol</a> and enjoy more sources.</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="note">
+    <strong>Note:</strong> This extension is open source. It unlocks additional streaming servers that aren't available by default. You may see a browser warning when installing — this is normal for extensions loaded outside the Chrome Web Store.
+  </div>
+</main>
+
+</body>
+</html>

@@ -8,7 +8,7 @@ import {
   useNavigate,
   useParams,
 } from "react-router-dom";
-
+import { ExtensionBanner } from "@/components/ExtensionBanner";
 import { convertLegacyUrl, isLegacyUrl } from "@/backend/metadata/getmeta";
 import { generateQuickSearchMediaUrl } from "@/backend/metadata/tmdb";
 import { DetailsModal } from "@/components/overlays/detailsModal";
@@ -129,6 +129,7 @@ function App() {
 
   return (
     <Layout>
+      <ExtensionBanner />
       <TraktAuthHandler />
       <LanguageProvider />
       <NotificationModal id="notifications" />

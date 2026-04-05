@@ -39,10 +39,10 @@ export function RevivalAnnouncementModal() {
               <Flare.Child className="pointer-events-auto relative">
                 <div className="flex justify-between items-center mb-4">
                   <h2 className="text-xl font-bold text-white">
-                    P-Stream is Back
+                    nowfar.lol is back!
                   </h2>
                   <button
-                    type="button"
+                    type="button" 
                     className="text-type-secondary hover:text-white transition-transform hover:scale-95"
                     onClick={handleClose}
                   >
@@ -51,7 +51,7 @@ export function RevivalAnnouncementModal() {
                 </div>
                 <div className="space-y-4 text-base text-type-secondary">
                   <p className="text-white font-bold border-l-2 border-white pl-3">
-                    This is a fork of the original P-Stream. XP Technologies
+                    This is a fork of the original P-Stream. nowfar.lol
                     holds no ownership over the original project and makes no
                     claim to it.
                   </p>
@@ -61,9 +61,8 @@ export function RevivalAnnouncementModal() {
                     their decision and wish to keep their identity private.
                   </p>
                   <p>
-                    The XP Technologies team has taken on the responsibility of
-                    continuing their legacy. We are committed to keeping
-                    P-Stream <strong className="text-white">open source</strong>{" "}
+                    The nowfar.lol has mirrored their legacy through the efforts of XP Technologies. We are committed to keeping
+                    nowfar.lol <strong className="text-white">open source</strong>{" "}
                     and{" "}
                     <strong className="text-white">completely ad-free</strong>.
                   </p>

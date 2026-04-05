@@ -12,7 +12,7 @@ export function SupportInfoModal({ id }: { id: string }) {
         <p className="text-type-secondary">{t("home.support.explanation")}</p>
         <p className="text-type-secondary">
           {t("home.support.explanation2")}{" "}
-          <MwLink url="https://discord.gg/wmbWfk4SGy">
+          <MwLink url="https://discord.com/invite/wmbWfk4SGy">
             {t("home.support.fluxer")}
           </MwLink>
         </p>

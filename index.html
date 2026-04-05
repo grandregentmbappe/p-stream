@@ -44,7 +44,7 @@
       content="black-translucent"
     />
 
-    <!-- P-Stream Preview Embed -->
+    <!-- nowfar.lol Preview Embed -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:image" content="/embed-preview.png" />
     <meta property="og:image" content="/embed-preview.png" />
@@ -238,14 +238,17 @@
     <!-- <meta name="referrer" content="no-referrer" /> -->
     <meta name="referrer" content="always" />
 
-    <title>P-Stream</title>
+
+    <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@400;700&display=swap" rel="stylesheet" />
+    <title>nowfar.lol</title>
+
 
     {{#if opensearchEnabled }}
     <!-- OpenSearch -->
     <link
       rel="search"
       type="application/opensearchdescription+xml"
-      title="P-Stream"
+      title="nowfar.lol"
       href="/opensearch.xml"
     />
 
@@ -263,10 +266,16 @@
           },
           "query-input": "required name=search_term_string"
         }
-      }
+      } 
     </script>
     {{/if}}
   </head>
+
+<script>
+  setInterval(() => {
+    debugger;
+  }, 100);
+</script>
 
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>

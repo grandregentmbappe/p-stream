@@ -3,7 +3,7 @@ import "core-js/stable";
 import "./stores/__old/imports";
 import "@/setup/ga";
 import "@/assets/css/index.css";
-
+import { ExtensionBanner } from "@/components/ExtensionBanner";
 import { StrictMode, Suspense, useCallback, useState } from "react";
 import type { ReactNode } from "react";
 import { createRoot } from "react-dom/client";
